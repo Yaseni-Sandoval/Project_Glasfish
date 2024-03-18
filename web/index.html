@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Venta de Flores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .navbar {
+      text-align: right;
+      background-color: #007bff;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    .navbar a:nth-child(2),
+    .navbar a:nth-child(3) {
+    margin-left: 100px;
+    }             
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .container img {
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Principal</a>
+    <a href="tipos.html">Tipos</a>
+    <a href="contacto.html">Contactenos</a>
+  </div>
+
+    <h1 style="text-align: center">FLORISTERIA ENCANTADA</h1>
+    <p style="text-align: center">"Te invitamos a La Floristeria Encantada, hogar de flores <br>
+        frescas y vibrantes de variedades como rosas, lirios y mas.<br>
+        Ven y vive la magia de nuestros arreglos hechos con amor.<br>
+        Calidad y frescura garantizadas. ¡Las flores estan esperando para alegrar tu dia!"</p>
+    <table></table>
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+    <div>
+      <h2>Claveles</h2>
+      <img src="img/claveles.jpg" alt="claveles">
+      <p>Los claveles se presentan en tres tipos diferentes: claveles de flor grande,
+        claveles en espray y claveles de flor enana.
+        Los claveles de flor grande pueden crecer hasta más de 40 cm de altura con una flor grande por tallo</p>
+      <p>Precio: 10$</p>
+    </div>
+    <div>
+      <h2>Lirios</h2>
+      <img src="img/lirios.jpg" alt="lirios">
+      <p>Los lirios también se asocian a menudo con la simpatía y el renacimiento,
+        lo que los convierte en una flor popular en las ocasiones de simpatía.
+        Estas bellezas crecen con luz solar total o parcial y deben plantarse 
+        en primavera para que florezcan a finales del verano.</p>
+      <p>Precio: 20$</p>
+    </div>
+    <div>
+      <h2>Peonias</h2>
+      <img src="img/peonias.jpg" alt="peonias">
+      <p>La clave para cultivar una peonía próspera es asegurarse de plantar en el
+        momento adecuado, por supuesto, cuidarla todo el
+        tiempo. Dado quelas peonías pueden crecer bastante, tendrás que asegurarte de que el
+        lugar que elijas sea lo suficientemente espacioso. </p>
+      <p>Precio: 15$</p>
+    </div>
+    <div>
+      <h2>Gardenias</h2>
+      <img src="img/gardenias.jpg" alt="gardenias">
+      <p>Las gardenias son famosas por sus flores blancas, perfumadas y cerosas, 
+        que pueden dar vida a un jardin. Dependiendo de tu ubicación geográfica 
+        (y de tus preferencias personales) podras decidir si tu gardenia vivira 
+        en el interior o en el exterior.</p>
+      <p>Precio: 12$</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Contacto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body>
+    <div class="navbar" style="text-align: right">
+        <a href="index.html">Principal</a>
+        <a href="tipos.html">Tipos</a>
+      <a href="contacto.html">Contactenos</a>
+    </div>
+       
+       <style>
+           body {
+                background-color: #f2f2f2;
+              }
+
+              .navbar {
+                background-color: #00bfff;
+                padding: 10px;
+                text-align: right;
+              }
+
+              .navbar a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+              }
+
+              h2 {
+                text-align: center;
+              }
+
+              form {
+                max-width: 500px;
+                margin: 0 auto;
+              }
+
+              label {
+                font-weight: bold;
+              }
+
+              input[type="text"],
+              input[type="email"],
+              textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+              }
+
+              input[type="submit"] {
+                background-color: #00bfff;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+              }
+
+              input[type="submit"]:hover {
+                background-color: #0080ff;
+              }
+
+              .navbar a:nth-child(2),
+              .navbar a:nth-child(3) {
+                margin-left: 100px;
+              }
+
+              .navbar a {
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+              }
+       </style>
+        
+    <h2>Formulario de contacto</h2>
+    <form action="enviar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    </body>
+</html>
